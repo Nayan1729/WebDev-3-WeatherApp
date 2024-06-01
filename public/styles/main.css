@@ -1,0 +1,91 @@
+.main-container{
+    background-image: url('bg5.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;  
+    color: black;
+}
+.headingOfHomePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:550px;
+}
+#searchBox{
+    /* background-image: url("bgImage.jpg"); */
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+#searchBox::placeholder{
+    color:black ;
+}
+#btn1{
+    background-color: black;
+    /* border: 1px solid black; */
+    color: white;
+}
+.containerForHomePage{
+    padding: 10px;
+}
+.HeadingOfCity{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 330px;
+}
+.today1{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.city-temp{
+    display: flex;
+    flex-direction: column;
+}
+#icon
+{
+    height: 6rem;
+}
+
+.icon-description{
+    display: flex;
+}
+.center-container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.forecast-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+   min-width: 100vw;
+   margin-bottom: 10px;
+}
+.forecast{
+    display: flex;
+    /* flex-direction: column; */
+    height: 200px;
+    width: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+#icon1{
+    width: 3rem;
+    margin-bottom: 30px;
+}
+.forecast >div {
+    display: flex;
+    flex-direction: column;
+
+}
