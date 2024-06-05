@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 import ejs from "ejs";
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 const port = 3000;
 const MyApiKey = "acfd756df1ead1e0490f63e1da3beb5e";
 app.set('views', path.join(__dirname, 'views'));
