@@ -1,14 +1,12 @@
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
-import { __express as ejsExpress } from 'ejs';
+
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 const port = 3000;
 const MyApiKey = "acfd756df1ead1e0490f63e1da3beb5e";
-app.set('view engine', 'ejs'); 
-app.engine('ejs', ejsExpress);
 
 app.get("/", (req, res) => {  
   res.render("index.ejs");
