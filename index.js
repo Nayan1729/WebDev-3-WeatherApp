@@ -1,7 +1,9 @@
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
-import path from "path";
+import { fileURLToPath } from 'url';
+import path from 'path';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 import ejs from "ejs";
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
