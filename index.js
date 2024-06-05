@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 const port = 3000;
 const MyApiKey = "acfd756df1ead1e0490f63e1da3beb5e";
-
+app.set('views', path.join(__dirname, 'views'));
 app.get("/", (req, res) => {  
   res.render("index.ejs");
 });
