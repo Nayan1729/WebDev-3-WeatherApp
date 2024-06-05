@@ -1,6 +1,7 @@
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
+import path from "path";
 import ejs from "ejs";
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
